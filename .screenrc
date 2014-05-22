@@ -1,0 +1,15 @@
+#defencoding big5
+defencoding UTF-8
+#encoding big5 big5
+caption always "%{=u .d} %-w%<%{=ub .B}%n %t%{=u .d}%+w "
+#caption always "%{wk}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{wk}%?%+Lw %=%{mk}@%H %{yk}%D %{ck}%M%{wk} %{ck}%d %{gk}%c"
+bindkey "^[[C" next
+bindkey "^[[D" prev
+bindkey "^[[1;5C" next
+bindkey "^[[1;5D" prev
+bindkey "\033[5C" next
+bindkey "\033[5D" prev
+bindkey "0x02 0x6E" next
+bindkey "0x02 0x70" prev
+vbell off 
+#shell -$SHELL
