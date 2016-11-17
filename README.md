@@ -1,4 +1,4 @@
-Congiguration files
+Configuration files
 =====
 Mainly for my personal usage.
 With it, it is convenient to set up the working environment.
