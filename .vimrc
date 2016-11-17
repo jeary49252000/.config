@@ -17,7 +17,7 @@ if filereadable($VIMRUNTIME . "/macros/matchit.vim")
 endif
 
 let g:NERDTreeDirArrows=0
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <F6> :NERDTreeToggle<CR>
 nnoremap <silent> <S-Tab> <C-w>h
 nnoremap <silent> <Tab> <C-w>l
 nnoremap <silent> <F5> :UndotreeToggle<CR>
@@ -40,6 +40,8 @@ set ai			" always set autoindenting on
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 set showmatch
 set nu
+set laststatus=2
+set statusline+=%F
 "set bg=dark
 "set background=dark	" another is 'light'
 colorscheme darkblue
@@ -57,10 +59,10 @@ if version >= 600
     set foldmethod=marker
     set foldlevel=1
 "    set foldtext=/^/=>
-    " set encoding=utf-8
+    set encoding=utf-8
     " set fileencoding=big5
     " set termencoding=big5
-    set encoding=big5
+    " set encoding=big5
     " set fileencodings=latin,big5,ucs-bom,utf-8,sjis,big5
     set fileencodings=ucs-bom,utf-8,sjis,big5,latin1
 else
@@ -99,6 +101,7 @@ if version >= 700
 
 end
 
+imap ii <ESC>
 " Crontabs must be edited in place
 au BufRead /tmp/crontab* :set backupcopy=yes
 filetype plugin indent on
