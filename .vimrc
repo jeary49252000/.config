@@ -56,7 +56,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
+"superTab mapping
+inoremap <expr> j pumvisible() ? "\<C-N>" : "j"
+inoremap <expr> k pumvisible() ? "\<C-P>" : "k"
 "set bg=dark
 "set background=dark	" another is 'light'
 colorscheme darkblue
@@ -74,10 +76,10 @@ if version >= 600
     set foldmethod=marker
     set foldlevel=1
 "    set foldtext=/^/=>
-    set encoding=utf-8
+    " set encoding=utf-8
     " set fileencoding=big5
     " set termencoding=big5
-    " set encoding=big5
+    set encoding=big5
     " set fileencodings=latin,big5,ucs-bom,utf-8,sjis,big5
     set fileencodings=ucs-bom,utf-8,sjis,big5,latin1
 else
