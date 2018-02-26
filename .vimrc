@@ -44,9 +44,9 @@ set laststatus=2
 set statusline+=%F
 set guifont=Consolas:h12 
 set autochdir
-set backupdir=E:\backup\
-set directory=E:\swap\
-set undodir=E:\undo\
+" set backupdir=E:\backup\
+" set directory=E:\swap\
+" set undodir=E:\undo\
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
