@@ -44,9 +44,11 @@ set laststatus=2
 set statusline+=%F
 set guifont=Consolas:h12 
 set autochdir
-" set backupdir=E:\backup\
-" set directory=E:\swap\
-" set undodir=E:\undo\
+if has("win32")
+	set backupdir=E:\backup\
+	set directory=E:\swap\
+	set undodir=E:\undo\
+endif
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
