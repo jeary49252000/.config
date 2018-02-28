@@ -27,6 +27,7 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
+set spell spelllang=en_us
 set nocompatible
 set wildmenu
 set backupdir=~/tmp,.,/var/tmp/vi.recover,/tmp
