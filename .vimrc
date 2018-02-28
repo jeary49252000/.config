@@ -50,7 +50,10 @@ if has("win32")
 	set directory=E:\swap\
 	set undodir=E:\undo\
 endif
+"markdown setting
+let g:vim_markdown_folding_disabled = 1
 
+"syntastic setting
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
